@@ -85,6 +85,7 @@ a {
 	margin: 0 0 0 20px;
 	line-height: 55px;
 	background: url("../images/icon.png");
+	background-size:cover;
 	background-repeat: no-repeat;
 	background-position: 0px 18px;
 	padding-left: 35px

@@ -90,14 +90,6 @@ a {
 	padding-left: 35px
 }
 
-#header span#audint {
-	float: right;
-	background-image: url("../images/logo.svg");
-	background-size:contain;
-	height: auto;
-	padding-top: 10px;
-	padding-bottom: 10px;	
-}
 
 #header span#twitter-dev a {
 	color: #e6910a

@@ -83,6 +83,7 @@ a {
 .container {
   grid-template-columns: calc(25%) auto calc(25%);
   grid-template-rows: auto;
+  border: 1px solid #333;
 }
 
 

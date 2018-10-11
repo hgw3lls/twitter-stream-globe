@@ -84,8 +84,9 @@
 		stats.setMode(0); // 0: fps, 1: ms
 
 		stats.domElement.style.position = 'absolute';
-		stats.domElement.style.right = '20px';
-		stats.domElement.style.bottom = '100px';
+		stats.domElement.style.right = '1000px';
+		stats.domElement.style.top = '200px';
+		stats.domElement.style.color = '#e6910a';
 
 		document.body.appendChild( stats.domElement );
 	}

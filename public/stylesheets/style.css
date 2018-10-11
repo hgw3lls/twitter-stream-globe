@@ -68,6 +68,24 @@ a {
 	margin: 0 10px
 }
 
+.item-a {
+  place-self: center;
+}
+
+.item-b {
+  place-self: center;
+}
+
+.item-c {
+  place-self: right;
+}
+
+.container {
+  grid-template-columns: calc(25%) auto calc(25%);
+  grid-template-rows: auto;
+}
+
+
 #header {
 	background-color: #ae6c04;
 	position: absolute;

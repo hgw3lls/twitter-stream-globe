@@ -52,7 +52,7 @@
     <div id="tweet-hud" ng-controller="TweetHud">
 
       <div id="header">
-        <h1>IREX2?</h1>
+        <h1>IREX2</h1>
         <img class="float: right; height: 100%" src = "../images/pubnub.png"
       </div>
 
@@ -76,7 +76,7 @@
           <span id="sentiment-value" class="{{sentimentState}}">{{avgSentiment}}</span>
 
         </div>
-
+		<div id="c" style="position: absolute; top: 20; left: 20;"></div>
         <div id="trends-panel" class="sub-panel">
           <h2>Trends</h2>
           <ul>
@@ -100,7 +100,7 @@
         <!-- <img id="nodejs-logo" src="/images/logo.svg" /> -->
       </div>
     </div>
-
+	<script src="/javascripts/neural.js"></script>
     <script src="/javascripts/shaders.js"></script>
     <script src="/javascripts/TweetBeacon.js"></script>
     <script src="/javascripts/LeapController.js"></script>

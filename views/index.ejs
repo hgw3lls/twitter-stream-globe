@@ -46,7 +46,7 @@
   <body>
 
     <!-- Container for the Three.js scene -->
-    <div id="globe-holder"></div>
+    <div id="globe-holder" style="padding-top: 100px"></div>
 
     <!-- Container for the Angular application -->
     <div id="tweet-hud" ng-controller="TweetHud">
@@ -67,7 +67,7 @@
       
       <!-- Container for the Angular application -->
       <div id="tweet-hud" ng-controller="TweetHud">
-      <div id="left-panel" class="hud-panel">
+      <div id="left-panel" class="hud-panel" style="padding-top: 100px">
         <div>
 
           <!-- Repeats for every Tweet in the $scope.tweets model -->
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div id="right-panel" class="hud-panel">
+      <div id="right-panel" class="hud-panel" style="padding-top: 100px">
 		<div id="c" style="position: absolute;"></div>
         <div id="sentiment-panel" class="sub-panel">
           <h2>Tweet Sentiment</h2>
@@ -112,33 +112,34 @@
         <!-- <img id="nodejs-logo" src="/images/logo.svg" /> -->
       </div>
     </div>
-	<script>
-		var uts = 1483228800;
-		var myVar = setInterval(myTimer, 721);
-		
-		function myTimer() {
-			'use strict';
-			var date = new Date(uts*1000);
-		  console.log(date);
-			var toYear = date.getFullYear();
-		  console.log(toYear);
-			var toMonth = date.getMonth() +1;
-			var toDate = date.getDate();
-		
-			var toDay = date.getDay();
-		
-			var toHour = date.getHours();
-			var toMunit = date.getMinutes();
-			var toSecond = date.getSeconds();
-			var days = ['Sunday', 'MonDay', 'TuesDay', 'WednsDay', 'ThursDay', 'FaiDay', 'SaturDay'];
-			document.getElementById("fullDayId").innerHTML = (days[toDay]) + ", " + toYear + " / " + toMonth + " / " + toDate + "<br />" + toHour + " : " + toMunit + " : " + toSecond;
-			var currentTime = 
-			// setInterval(currentTime, 1000);
-		
-		   uts = uts + 62304;
-		  console.log(uts);
-		  };
-	</script>
+<script>
+	var uts = 1483228800;
+	var myVar = setInterval(myTimer, 721);
+	
+	function myTimer() {
+		'use strict';
+		var date = new Date(uts*1000);
+	  console.log(date);
+		var toYear = date.getFullYear();
+	  console.log(toYear);
+		var toMonth = date.getMonth() +1;
+		var toDate = date.getDate();
+	
+		var toDay = date.getDay();
+	
+		var toHour = date.getHours();
+		var toMunit = date.getMinutes();
+		var toSecond = date.getSeconds();
+		var days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+		document.getElementById("fullDayId").innerHTML = (days[toDay]) + "<br />" + toYear + " / " + toMonth + " / " + toDate + "<br />" + toHour + " : " + toMunit + " : " + toSecond;
+		var currentTime = 
+		// setInterval(currentTime, 1000);
+	
+	   uts = uts + 62304;
+	  console.log(uts);
+	  };
+</script>
+
     <script src="/javascripts/shaders.js"></script>
     <script src="/javascripts/TweetBeacon.js"></script>
     <script src="/javascripts/LeapController.js"></script>

@@ -69,19 +69,20 @@
       </div>
 
       <div id="right-panel" class="hud-panel">
-        <div id="sentiment-panel" class="sub-panel">
+		<div id="c" style="position: absolute;"></div>
+        <!--<div id="sentiment-panel" class="sub-panel">
           <h2>Tweet Sentiment</h2>
 
-          <!-- Bind to $scope.avgSentiment model -->
+          <!-- Bind to $scope.avgSentiment model --*>
           <span id="sentiment-value" class="{{sentimentState}}">{{avgSentiment}}</span>
 
         </div>
-		<canvas id="c" style="position: absolute; top: 20; left: 20;"></canvas>
+		
         <div id="trends-panel" class="sub-panel">
           <h2>Trends</h2>
           <ul>
 
-            <!-- Repeats for every trend in the $scope.trends model -->
+            <!-- Repeats for every trend in the $scope.trends model --*>
             <li ng-repeat="trend in trends" class="trend-item">
               <a href="{{trend.url}}" target="_blank">{{trend.name}}</a>
             </li>
@@ -90,8 +91,8 @@
         </div>
 
         <div class="sub-panel">
-          <!-- <span id="github">Source available on <a href="https://github.com/twitterdev/twitter-stream-globe">GitHub</a></span> -->
-        </div>
+          <!-- <span id="github">Source available on <a href="https://github.com/twitterdev/twitter-stream-globe">GitHub</a></span> --*>
+        </div>-->
       </div>
 
       <div id="logo-holder">

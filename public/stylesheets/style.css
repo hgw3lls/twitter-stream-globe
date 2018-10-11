@@ -46,7 +46,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 body {
 	font-family: 'Px437 IBM ISO9';
 	src: url('../fonts/Px437_IBM_ISO9.ttf');
-	background-color: #804f00;
+	background-color: #000;
 	color: #CCC;
 	overflow: hidden
 }

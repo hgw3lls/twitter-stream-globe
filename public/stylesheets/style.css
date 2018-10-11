@@ -81,15 +81,23 @@ a {
 #header h1 {
 	float: left;
 	color: #000;
-	font-size: 75px;
+	font-size: 50px;
 	font-weight: bold;
 	margin: 0 0 0 20px;
 	line-height: 55px;
 	background-repeat: no-repeat;
 	background-position: 0px 18px;
-	padding-left: 35px
+	padding-left: 20px;
+	padding-top: 20px
 }
 
+#header span#twitter-dev {
+	float: right;
+	font-size: 18px;
+	color: #e6910a;
+	line-height: 55px;
+	margin: 0 25px 0 0
+}
 
 #header span#twitter-dev a {
 	color: #e6910a

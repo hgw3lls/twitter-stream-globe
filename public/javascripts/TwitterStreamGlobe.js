@@ -85,7 +85,7 @@
 
 		stats.domElement.style.position = 'absolute';
 		stats.domElement.style.right = '1000px';
-		stats.domElement.style.top = '200px';
+		stats.domElement.style.top = '1000px';
 		stats.domElement.style.color = '#e6910a';
 
 		document.body.appendChild( stats.domElement );

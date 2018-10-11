@@ -92,12 +92,7 @@ a {
 	top: 0;
 	left: 0;
 	opacity: 0.75;
-	display: grid;
-	grid-gap: 10px;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: 100px;
-	grid-template-areas:
-			"head time time logo";
+	
 	/*grid-template-rows: repeat(2, )*/
 }
 

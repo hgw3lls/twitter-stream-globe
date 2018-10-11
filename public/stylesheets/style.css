@@ -82,6 +82,7 @@ a {
   background: #ae6c04;
   position:  absolute;
   opacity: 0.75;
+  padding-right: 40px;
 }
 
 header {

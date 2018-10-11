@@ -52,9 +52,16 @@
     <div id="tweet-hud" ng-controller="TweetHud">
 
       <div id="header">
-        <h1>IREX2</h1>
-        <img class="float: right; height: 100%" src = "../images/pubnub.png"
-      </div>
+	  	<div style="width: 25%; position: relative;">
+	  		<h1>IREX2</h1>
+	  	</div>
+	  	<div style="width: 50%; position: relative;">
+	  		<p id="fullDayId"></p>
+	  	</div>
+	  	<div style="width: 25%; position: relative;">
+	  		<img src = "../images/pubnub.png"/>
+	  	</div>
+	  </div>
 
       <div id="left-panel" class="hud-panel">
         <div>
@@ -101,7 +108,33 @@
         <!-- <img id="nodejs-logo" src="/images/logo.svg" /> -->
       </div>
     </div>
-	
+	<script>
+		var uts = 1483228800;
+		var myVar = setInterval(myTimer, 721);
+		
+		function myTimer() {
+			'use strict';
+			var date = new Date(uts*1000);
+		  console.log(date);
+			var toYear = date.getFullYear();
+		  console.log(toYear);
+			var toMonth = date.getMonth() +1;
+			var toDate = date.getDate();
+		
+			var toDay = date.getDay();
+		
+			var toHour = date.getHours();
+			var toMunit = date.getMinutes();
+			var toSecond = date.getSeconds();
+			var days = ['Sunday', 'MonDay', 'TuesDay', 'WednsDay', 'ThursDay', 'FaiDay', 'SaturDay'];
+			document.getElementById("fullDayId").innerHTML = (days[toDay]) + ", " + toYear + " / " + toMonth + " / " + toDate + "<br />" + toHour + " : " + toMunit + " : " + toSecond;
+			var currentTime = 
+			// setInterval(currentTime, 1000);
+		
+		   uts = uts + 62304;
+		  console.log(uts);
+		  };
+	</script>
     <script src="/javascripts/shaders.js"></script>
     <script src="/javascripts/TweetBeacon.js"></script>
     <script src="/javascripts/LeapController.js"></script>

@@ -68,36 +68,67 @@ a {
 	margin: 0 10px
 }
 
-.item-a {
-  place-self: center;
-}
-
-.item-b {
-  place-self: center;
-}
-
-.item-c {
-  place-self: right;
-}
-
 .container {
-  grid-template-columns: calc(25%) auto calc(25%);
-  grid-template-rows: auto;
-  border: 1px solid #333;
+ display: grid;
+ grid-template-areas: 
+     "header time logo";
+	 
+	 grid-template-rows: 1fr;
+	 grid-template-columns: 25% 1fr 25%;
+	grid-gap: 5px;
+  /*height: 100vh;*/
+  margin: 10px;
+  width:  100%;
+  background: #ae6c04;
+  position:  absolute;
+  opacity: 0.75;
+}
+
+header {
+	padding-left: 20px;
+	padding-top: 5px;
+	grid-area: header;
+	place-self: left;
+/*	padding-left: 40px;
+	padding-bottom: 40px;*/
+	
+}
+
+time {
+	padding: 5px;
+	grid-area: time;
+	place-self: center;
+	
+	
+	
+}
+
+time p {
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+}
+
+logo {
+	padding-left: 50px;
+	grid-area: logo;
+	place-self: right;
+	
+	
 }
 
 
-#header {
+/*#header {
 	background-color: #ae6c04;
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0.75;
+	
 	width:  100%;
-	/*grid-template-rows: repeat(2, )*/
-}
+	/*grid-template-rows: repeat(2, )*!/
+}*/
 
-#header h1 {
+header h1 {
 	float: left;
 	color: #000;
 	font-size: 50px;

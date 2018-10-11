@@ -75,7 +75,7 @@ a {
 	 
 	 grid-template-rows: 1fr;
 	 grid-template-columns: 25% 1fr 25%;
-	grid-gap: 5px;
+	/*grid-gap: 5px;*/
   /*height: 100vh;*/
   margin: 10px;
   width:  100%;
@@ -85,8 +85,8 @@ a {
 }
 
 header {
-	padding-left: 20px;
-	padding-top: 5px;
+	/*padding-left: 20px;*/
+	/*padding-top: 5px;*/
 	grid-area: header;
 	place-self: left;
 /*	padding-left: 40px;

@@ -169,14 +169,14 @@ header h1 {
 	left: 0;
 	right: 0;
 	z-index: 1;
-	padding: 20px
+	/*padding: 20px*/
 }
 
 #tweet-hud .hud-panel {
 	position: absolute;
 	top: 75px;
 	bottom: 20px;
-	width: 100%;
+	width: 400px;
 	opacity: 0.75
 }
 
